@@ -1,0 +1,17 @@
+.list-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-item {
+    height: 25px;
+    width: 60%;
+    background-color: beige;
+    border: 2px solid black;
+    margin-left: 250px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
