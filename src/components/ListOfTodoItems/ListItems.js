@@ -6,7 +6,7 @@ export default function Header(props){
             <div className="list-container">
                     {
                         props.list.map((d,indexItem)=>{
-                        return(<div key={indexItem}>
+                        return(<div key={indexItem} className="list-item-container">
                                <li  className="list-item"><i className="fa fa-times overlay" aria-hidden="true" onClick={()=>props.onRemove(indexItem)}/>{d}</li>
                             </div>)})
                     }
