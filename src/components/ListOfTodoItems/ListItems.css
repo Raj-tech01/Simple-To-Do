@@ -13,5 +13,18 @@
     margin-left: 250px;
     margin-top: 10px;
     list-style-type: none;
+    cursor: pointer;
+    transition: background-color .5s;
 }
 
+li:hover .overlay {
+    display: block;
+    float: right !important;
+  }
+
+.overlay { 
+    margin-top: 4px;
+    display: none;  
+    position: absolute ;
+    transition: background 0.5s ease;
+}

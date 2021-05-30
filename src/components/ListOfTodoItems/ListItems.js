@@ -5,7 +5,10 @@ export default function Header(props){
     return (
             <div className="list-container">
                     {
-                        props.list.map(d=><div className="list-item"><li>{d}</li></div>)
+                        props.list.map((d,indexItem)=>{
+                        return(<div key={indexItem}>
+                               <li  className="list-item"><i className="fa fa-times overlay" aria-hidden="true" onClick={()=>props.onRemove(indexItem)}/>{d}</li>
+                            </div>)})
                     }
             </div>
         )

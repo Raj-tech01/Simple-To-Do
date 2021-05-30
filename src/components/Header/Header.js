@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header(props){
     const [item, setItem] = useState('')
 
-    const onSubmit = (e) =>{
+    const onSubmit = e =>{
         e.preventDefault()
         if(item !== ""){
             props.updateList(item)
